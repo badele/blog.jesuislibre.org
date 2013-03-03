@@ -1,0 +1,9 @@
+active_modules: [pygments, tags, blog]
+author: Bruno Adele
+canonical_url: http://blog.jesuislibre.org/
+feed:
+  name: Famille de geeks
+  subtitle: Une famille complètement geek
+modules:
+  pygments:
+    style: tango
