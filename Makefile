@@ -10,5 +10,5 @@ serve:
 	run-rstblog serve
 
 upload:
-	#rsync -a _build/ blog.jesuislibre.org:/www/blog.jesuislibre.org/
+	rsync -a _build/ blog.jesuislibre.org@10.0.0.6:/home/blog.jesuislibre.org/public_html/
 	@echo "Done..."

@@ -1,4 +1,4 @@
-active_modules: [pygments, tags, blog]
+active_modules: [pygments, tags, blog, disqus]
 author: Bruno Adele
 canonical_url: http://blog.jesuislibre.org/
 feed:
@@ -7,3 +7,5 @@ feed:
 modules:
   pygments:
     style: tango
+  disqus:
+    shortname: blogdejesuislibreorg

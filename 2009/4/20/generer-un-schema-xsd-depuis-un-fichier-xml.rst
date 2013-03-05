@@ -1,5 +1,5 @@
 public: yes
-tags: [Archlinux, Outil, Planet-Libre, Terminal, Tutoriel, XML]
+tags: [Archlinux, Outil, planet-libre, Terminal, Tutoriel, XML]
 summary: |
   Détaille comment générer un schéma xsd depuis un fichier xml
 
