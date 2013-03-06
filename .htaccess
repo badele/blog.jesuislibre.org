@@ -1,0 +1,20 @@
+<IfModule mod_alias.c>
+	Redirect permanent /2013/02/test-unitaire-automatise-lors-dun-push-sur-github /2013/2/19/test-unitaire-automatise-lors-dun-push-sur-github
+	Redirect permanent /2012/10/decouverte-de-lenvironnement-arduino /2012/10/7/decouverte-de-lenvironnement-arduino
+	Redirect permanent /2012/09/rendu-dun-verre-de-sirop-avec-blender-cycles /2012/9/22/rendu-dun-verre-de-sirop-avec-blender-cycles
+	Redirect permanent /2012/06/support-du-cm15a-driver-iplc-pour-le-kernel-3-x /2012/6/12/support-du-cm15a-driver-iplc-pour-le-kernel-3-x
+	Redirect permanent /2010/06/dessiner-une-bd-avec-inkscape-dapres-une-histoire-inventee-par-lucas-7-ans /2010/6/16/dessiner-une-bd-avec-inkscape-dapres-une-histoire-inventee-par-lucas-7-ans
+	Redirect permanent /2010/05/comment-creer-un-cercle-chromatique-en-30-secondes-avec-inkscape /2010/5/16/comment-creer-un-cercle-chromatique-en-30-secondes-avec-inkscape
+	Redirect permanent /2009/10/support-de-landroid-market-depuis-lemulateur-du-sdk-de-google /2009/10/22/support-de-landroid-market-depuis-lemulateur-du-sdk-de-google
+	Redirect permanent /2009/09/hadopi-ii-la-loi-qui-empechera-des-innocents-de-surfer /2009/9/17/hadopi-ii-la-loi-qui-empechera-des-innocents-de-surfer
+	Redirect permanent /2009/06/la-loi-hadopi-mise-a-mal-par-freewifi /2009/6/5/la-loi-hadopi-mise-a-mal-par-freewifi
+	Redirect permanent /2009/05/webmail-faille-de-securite-des-questions-non-secretes /2009/5/20/webmail-faille-de-securite-des-questions-non-secretes
+	Redirect permanent /2009/04/definition-dun-gisc-vue-par-la-population /2009/4/24/definition-dun-gisc-vue-par-la-population
+	Redirect permanent /2009/04/generer-un-schema-xsd-depuis-un-fichier-xml /2009/4/20/generer-un-schema-xsd-depuis-un-fichier-xml
+	Redirect permanent /2009/04/export-vos-donnees-de-kphotoalbum-vers-iptc /2009/4/20/export-vos-donnees-de-kphotoalbum-vers-iptc
+	Redirect permanent /2009/04/naissance-dun-geek /2009/4/20/naissance-dun-geek
+</IfModule>
+
+# END WordPress
+
+
