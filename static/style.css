@@ -62,6 +62,7 @@ div.highlight, pre.literal-block {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     margin-bottom: 10px;
+    border-left: 4px solid #2669AD;
 }
 
 div.highlight pre, pre.literal-block {
@@ -199,3 +200,4 @@ a, a:visited {
         margin-bottom: 15px;
     }
 }
+
