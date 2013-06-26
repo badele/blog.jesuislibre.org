@@ -177,6 +177,32 @@ a, a:visited {
     margin-right: 10px;
 }
 
+/* Author */
+
+.author {
+    background: #F4F4F4;
+    padding: 10px;
+    /* border: solid 1px #2669AD; */
+    border: solid 1px #DDDDDD;
+    margin: 0 0 10px 0;
+}
+
+
+h3 {
+    margin: 10px 0 10px 0;
+}
+
+.author img {
+    float: left;
+    margin: 10px 20px 20px 0;
+    padding: 2px;
+    border: 1px solid #DDDDDD;
+}
+
+.infos >  p {
+    margin-bottom: 0px;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 600px or max-device-width: 600px) {
