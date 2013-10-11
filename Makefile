@@ -12,9 +12,14 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+doc:
+	cd /LIVE/projects/pelican-theme-jesuislibre ; ./generate_pelicanconf-sample.py /LIVE/projects/blog.jesuislibre.org/pelicanconf.py | sort > pelicanconf-sample.py
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+
+regenerate:
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
 ifdef PORT
@@ -30,12 +35,6 @@ else
 	$(BASEDIR)/develop_server.sh restart
 endif
 
-# RSTBLOG
-build:
-	run-rstblog build
-#serve:
-#	run-rstblog serve
-
 push:
 	git push github master
 
@@ -43,5 +42,6 @@ upload:
 #	cp .htaccess _build/
 #	cp googlea3540b86a38da267.html _build/
 	echo "" > output/drafts/index.html
-	rsync -ar --delete output/ blog.jesuislibre.org@10.0.0.6:/home/blog.jesuislibre.org/public_html/
+	cp output/drafts/index.html output/static/
+	rsync -ar --delete --exclude drafts output/ blog.jesuislibre.org@10.0.0.6:/home/blog.jesuislibre.org/public_html/
 	@echo "Done..."
