@@ -1,7 +1,7 @@
 Automatiser vos tâches avec Fabrecipes
 ######################################
 :date: 2013-10-11
-:tags: planet-libre, Fabric, Python, Linux
+:tags: planet-libre, Fabrecipes, Python, Linux
 :summary: Fabrecipes est un projet qui a pour ambition de créer des recettes d'automatisation des tâches. Par exemple aAutomatiser une installation Archlinux depuis le CD d'installation.
 
 Le projet
