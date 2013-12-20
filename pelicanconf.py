@@ -16,13 +16,13 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'fr'
 
 # CACAUSE
-CACAUSE_ENGINE_URL = "http://api.cacause.org/api"
-CACAUSE_ENGINE_URL = "http://localhost:5000"
-CACAUSE_SITENAME = "blog.jesuislibre.org"
-CACAUSE_DIR = 'comments'
-CACAUSE_GRAVATAR = True
-PLUGIN_PATH = "/LIVE/projects/pelican-demo/plugins"
-PLUGINS = ['cacause']
+#CACAUSE_ENGINE_URL = "http://api.cacause.org/api"
+#CACAUSE_ENGINE_URL = "http://localhost:5000"
+#CACAUSE_SITENAME = "blog.jesuislibre.org"
+#CACAUSE_DIR = 'comments'
+#CACAUSE_GRAVATAR = True
+#PLUGIN_PATH = "/LIVE/projects/pelican-demo/plugins"
+#PLUGINS = ['cacause']
 
 # URL
 ARTICLE_URL = '{date:%Y}/{date:%-m}/{date:%-d}/{slug}'
