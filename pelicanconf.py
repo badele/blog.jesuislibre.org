@@ -11,7 +11,7 @@ SITESUBTITLE = 'Une famille complètement 633<'
 SITEURL = 'http://blog.jesuislibre.org'
 GITHUB_BLOG_SITE = 'https://github.com/badele/blog.jesuislibre.org'
 DISQUS_SITENAME = 'blogdejesuislibreorg'
-THEME = "/LIVE/projects/pelican-themes/jesuislibre"
+THEME = "/home/badele/docshare/projects/pelican-themes/jesuislibre"
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'fr'
 
