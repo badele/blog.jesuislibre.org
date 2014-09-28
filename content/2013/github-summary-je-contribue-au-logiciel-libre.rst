@@ -95,6 +95,7 @@ Voici un exemple pour la génération d'une page example.rst
 Vous pouvez visualiser le résultat sur la capture ci-dessous ou sur `mon site personnel <http://bruno.adele.im>`_
 
 .. image:: http://bruno.adele.im/static/github-summary.png
+   :alt: github-summary
 
 .. _Github: https://github.com
 .. _Pelican: http://blog.getpelican.com/
