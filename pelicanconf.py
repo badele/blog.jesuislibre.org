@@ -65,5 +65,5 @@ STATIC_PATHS = [
 ]
 
 #Piwik
-PIWIK_SERVER = 'analytics.cendreo.com/'
+PIWIK_SERVER = 'analytics.jesuislibre.org/'
 PIWIK_ID = 4
