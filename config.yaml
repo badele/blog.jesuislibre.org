@@ -1,0 +1,112 @@
+LanguageCode: "fr-FR"
+DefaultContentLanguage: "fr"
+Title: "Famille de geeks"
+BaseURL: "http://blog.jesuislibre.org/"
+Theme: "beautifulhugo"
+MetaDataFormat: "yaml"
+
+pygmentsUseClasses: true
+pygmentsUseClasses: true
+pygmentCodeFences: true
+
+taxonomies:
+  tag: "tags"
+  section: "section"
+
+Permalinks:
+  Post: ":slug"
+
+# Rename RSS feed
+outputs:
+  home: ["HTML","RSS"]
+  taxonomy: ["HTML","RSS"]
+
+mediaTypes:
+  "application/rss":
+    suffix: "atom"
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+Author:
+  Name: "Bruno Adelé"
+  Bio: "Passionné d'informatique depuis + de 25 ans, Devops dans une start up Montpelliéraine, utilise et contribue aux logiciels Open Source"
+  Job: "Devops & Geek"
+  Location: "Montpellier - France"
+  Img: /img/bruno.jpg
+  Smallimg: /img/small-bruno.png
+  Link: 'http://bruno.adele.im'
+  Follow: https://twitter.com/jesuislibre
+
+menu:
+  main:
+    - name: "Home"
+      Weight: 1
+      identifier: "home"
+      URL: "/"
+
+    - name: "Archives"
+      Weight: 2
+      identifier: "archives"
+      URL: "/archives"
+
+    - name: "Tags"
+      Weight: 3
+      identifier: "tags"
+      URL: "/tags"
+
+    - name: "A propos"
+      Weight: 4
+      identifier: "about"
+      URL: "http://bruno.adele.im"
+
+params:
+  UseChroma: true
+  shortdateformat: "2 Jan"
+  dateformat: "2 Jan 2006"
+
+  site:
+    sitedescription: "Une famille complètement 633<"
+
+  jsl:
+    piwik_id: 4
+    piwik_server: "analytics.jesuislibre.org"
+
+  buttons:
+    - Alt: "Family site"
+      URL: "adele.im"
+      Img: "/button/badge_aim.png"
+
+    - Alt: "Feed RSS"
+      URL: "http://feeds.feedburner.com/FamilleDeGeek"
+      Img: "/button/badge_rss.png"
+
+    - Alt: "Twitter"
+      URL: "http://twitter.com/jesuislibre.org"
+      Img: "/button/badge_twitter.png"
+
+    - Alt: "Google +"
+      URL: "https://plus.google.com/100723270029692582967"
+      Img: "/button/badge_google+.png"
+
+    - Alt: "Blog"
+      URL: "ahttp://blog.jesuislibre.org"
+      Img: "/button/badge_blog.png"
+
+    - Alt: "Facebook"
+      URL: "http://www.facebook.com/bruno.adele"
+      Img: "/button/badge_facebook.png"
+
+    - Alt: "Flickr"
+      URL: "http://www.flickr.com/photos/b_adele"
+      Img: "/button/badge_flickr.png"
+
+    - Alt: "Linkedin"
+      URL: "http://fr.linkedin.com/in/brunoadele"
+      Img: "/button/badge_linkedin.png"
+
+    - Alt: "Github"
+      URL: "https://github.com/badele"
+      Img: "/button/badge_github.png"
