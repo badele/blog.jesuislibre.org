@@ -47,10 +47,10 @@ menu:
       identifier: "home"
       URL: "/"
 
-    - name: "Archives"
-      Weight: 2
-      identifier: "archives"
-      URL: "/archives"
+    # - name: "Archives"
+    #   Weight: 2
+    #   identifier: "archives"
+    #   URL: "/archives"
 
     - name: "Tags"
       Weight: 3
