@@ -51,29 +51,3 @@ Dans le même genre, voir la vidéo suivante: :
 Nathalie Kosciusko-Moriset
 
 {{< youtube sVQ3OCbUg2s >}}
-
-<div id="comments">
-
-
-<h3 id="comments-title">Une réponse à <em>Définition d’un Gisc (vue par la population)</em></h3>
-
-
-<ol class="commentlist">
-<li id="li-comment-24" class="comment even thread-even depth-1">
-<div id="comment-24">
-<div class="comment-author vcard">
-<img width="40" height="40" class="avatar avatar-40 photo" src="http://1.gravatar.com/avatar/33df8ec106a2f45e8f576f5a154c1818?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G" alt="com24">            <cite class="fn">thierryancey</cite> <span class="says">dit&nbsp;:</span>       </div><!-- .comment-author .vcard -->
-
-<div class="comment-meta commentmetadata"><a href="http://blog.jesuislibre.org/2009/04/definition-dun-gisc-vue-par-la-population/comment-page-1/#comment-24">
-5 juin 2009 à 18 h 30 min</a>      </div><!-- .comment-meta .commentmetadata -->
-
-<div class="comment-body"><p>Sympa la première vidéo !</p>
-</div>
-
-<div class="reply">
-</div><!-- .reply -->
-</div><!-- #comment-##  -->
-
-</li>
-</ol>
-</div>

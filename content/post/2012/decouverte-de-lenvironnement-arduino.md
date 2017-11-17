@@ -140,29 +140,3 @@ schématiser vos montages sur breadboard, ainsi que le schéma
 
 
 Voila, en espérant que ça vous donnera envie d’aller plus loin…
-
-<div id="comments">
-
-
-<h3 id="comments-title">Une réponse à <em>Découverte de l’environnement Arduino</em></h3>
-
-
-<ol class="commentlist">
-<li id="li-comment-591" class="comment even thread-even depth-1">
-<div id="comment-591">
-<div class="comment-author vcard">
-<img width="40" height="40" class="avatar avatar-40 photo" src="http://1.gravatar.com/avatar/bb1d4359e44124ab92ca5fbf4070fa9b?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G" alt="com591">           <cite class="fn"><a class="url" rel="external nofollow" href="http://www.civade.com">ewidance</a></cite> <span class="says">dit&nbsp;:</span>       </div><!-- .comment-author .vcard -->
-
-<div class="comment-meta commentmetadata"><a href="http://blog.jesuislibre.org/2012/10/decouverte-de-lenvironnement-arduino/comment-page-1/#comment-591">
-17 février 2013 à 10 h 50 min</a>      </div><!-- .comment-meta .commentmetadata -->
-
-<div class="comment-body"><p>Alors là…. Je suis scotché sur Fritzing… que je ne connaissais pas. Merci qui? Merci Bruno!</p>
-</div>
-
-<div class="reply">
-</div><!-- .reply -->
-</div><!-- #comment-##  -->
-
-</li>
-</ol>
-</div>

@@ -11,7 +11,7 @@ Tags:
 - Stastique
 ---
 
-**Edit** J'ai migré dorénavant ce blog vers ~~[Pelican](http://blog.getpelican.com/)~~ [Hugo](http://blog.getpelican.com/)
+**Edit** J'ai migré dorénavant ce blog vers ~~[Pelican](http://blog.getpelican.com/)~~ [Hugo](http://blog.jesuislibre.org/migration-de-pelican-vers-hugo)
 
 Après plusieurs recherches, je pense avoir trouvé mon moteur de blog, il
 se nomme [rstblog](https://github.com/mitsuhiko/rstblog), créé par

@@ -64,10 +64,10 @@ l’activer, modifier la variable onlyparse à 0
 **Exemple d’utilisation**
 
 {{< highlight bash>}}
-./kphotoalbum2iptc.pl /path/album "^sous repertoire.*.jpg|.jpeg"`
+./kphotoalbum2iptc.pl /path/album "^sous repertoire.*.jpg|.jpeg"
 {{< /highlight>}}
 
-kphotoalbum2iptc.pl
+Fichier **kphotoalbum2iptc.pl**
 
 {{< highlight perl>}}
 #!/usr/bin/perl -w
