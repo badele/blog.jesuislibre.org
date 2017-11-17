@@ -1,0 +1,12 @@
+_id: 3
+comment: "**@nyquist**\ C’est justement le problème avec le https, c’est qu’on lui fait trop confiance, car il est juste la pour crypter et certifier que la page n’a pas été altérée entre le serveur et le client, mais si on arrive à faire du XSS, cette page sera considéré comme valide.\r\n\r\n
+\r\n\r\n
+Voici un exemple de XSS avec le site paypal, l’attaquant est arrivé à afficher un message javascript et pourtant le site est considéré comme sûr ( barre d’adresse verte + cadenas).\r\n\r\n
+http://news.netcraft.com/archives/2008/05/16/paypal_xss_vulnerability_undermines_ev_ssl_security.html
+\r\n\r\n
+Un autre lien\r\n\r\n
+http://www.nexen.net/actualites/securite/18147-ssl_ne_peut_rien_contre_les_xss.php"
+name: Bruno Adelé
+email: f4a804b1c2256bdefb9674105039dd98
+website: 'http://bruno.adele.im'
+date: '2009-06-05T19:30:00.00Z'

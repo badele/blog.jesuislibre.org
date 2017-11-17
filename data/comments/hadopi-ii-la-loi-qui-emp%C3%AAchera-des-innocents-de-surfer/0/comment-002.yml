@@ -1,0 +1,17 @@
+_id: 2
+comment: "> Pourquoi utiliser macchanger (qui nécéssite des paquets supplémentaires), alors qu’un simple ifconfig permet de changer son @MAC ?\r\n\r\n
+
+> ifconfig eth0 hw ether 00:XX:XX:XX:XX:XX\r\n\r\n
+
+Je ne connaissais pas cette technique, effectivement c’est plus éfficace et cela fait effectivement un paquet en moins à installer :)\r\n
+
+> La question que je me pose : L’adresse IP publique du coté FreeWifi est elle la même que celle de l’abonné (il ne me semble pas).\r\n\r\n
+
+> Si tu es connecté du coté FreeWifi, je ne pense pas que le titulaire de la ligne soit mis en cause (même si tu as la même @MAC que son pc). Le coté FreeWifi (et donc l’@IP qui va avec) ne le concerne pas.\r\n\r\n
+
+L’addresse IP du hotspot freewifi n’est effectivement pas la même que c’elle de l’abonné, néanmoins il te faut utiliser le login et password crée depuis ta freebox. C’est donc le couple login/password qui permettra d’identifier quel abonné s’est identifié sur quel hotspot et quelle activité il à eu. c’est du moins comme ça que les autoritées risque de l’interpréter.
+"
+name: Bruno Adelé
+email: f4a804b1c2256bdefb9674105039dd98
+website: 'http://bruno.adele.im'
+date: '2009-09-18T8:38:00.00Z'

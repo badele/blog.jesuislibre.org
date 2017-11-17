@@ -1,0 +1,13 @@
+_id: 1
+comment: "Pourquoi utiliser macchanger (qui nécéssite des paquets supplémentaires), alors qu’un simple ifconfig permet de changer son @MAC ?\r\n\r\n
+
+ifconfig eth0 hw ether 00:XX:XX:XX:XX:XX\r\n\r\n
+
+La question que je me pose : L’adresse IP publique du coté FreeWifi est elle la même que celle de l’abonné (il ne me semble pas).\r\n
+Si tu es connecté du coté FreeWifi, je ne pense pas que le titulaire de la ligne soit mis en cause (même si tu as la même @MAC que son pc). Le coté FreeWifi (et donc l’@IP qui va avec) ne le concerne pas.\r\n\r\n
+
+Je dis peut être une bêtise hein, c’est juste une question."
+name: boulate
+email: 16f8abf859f89ee1b2deb99bbad4b9b2
+website: 'http://flood.fr/'
+date: '2009-09-17T19:06:00.00Z'

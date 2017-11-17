@@ -1,0 +1,7 @@
+_id: 2
+comment: "J’espère quand même que le site de free sera en https et signé par un certificat validé par une autorité reconnu.\r\n\r\n
+Je ne connais pas la technique du Cross Site Scripting (XSS) + iframe. Mais j’espere que la méthode certificat + https n’est pas sensible a ce genre d’attaque."
+name: nyquist
+email: ad516503a11cd5ca435acc9bb6523536
+website: 'http://nyquist.life.free.fr/'
+date: '2009-06-05T16:58:00.00Z'

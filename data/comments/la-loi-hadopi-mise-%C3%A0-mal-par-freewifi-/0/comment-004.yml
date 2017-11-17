@@ -1,0 +1,7 @@
+_id: 4
+comment: "**@moule** Arp Poisonning avec Ettercap par exemple.\r\n\r\n
+Le concept est d’envoyer un faux certificat (très facile de l’accepter quand on a un navigateur de merde comme 65% des internautes et qu’on est un peu distrait comme 99% des internautes) … c’est une technique très efficace et peu de gens font gaffe à voir si le certificat est signé par un tiers de confiance."
+name: bluetouff
+email: ad516503a11cd5ca435acc9bb6523536
+website: 'http://bluetouff.com/'
+date: '2009-06-30T00:11:00.00Z'
