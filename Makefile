@@ -6,14 +6,11 @@ hugoinstall:
 	cp /tmp/hugo ~/local/bin/
 
 build:
-	hugo --cleanDestinationDir
-
-clean:
-	hugo --cleanDestinationDir
+	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --cleanDestinationDir
 
 serve:
 	hugo gen chromastyles -v --style=monokai > themes/beautifulhugo/static/css/chroma_syntax.css
-	hugo serve -v --buildDrafts
+	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve -v --buildDrafts
 
 serve-debug:
 	hugo serve -v --buildDrafts --renderToDisk
