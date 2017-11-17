@@ -30,16 +30,6 @@ outputFormats:
     mediatype: "application/rss"
     baseName: "feed"
 
-Author:
-  Name: "Bruno Adelé"
-  Bio: "Passionné d'informatique depuis + de 25 ans, Devops dans une start up Montpelliéraine, utilise et contribue aux logiciels Open Source"
-  Job: "Devops & Geek"
-  Location: "Montpellier - France"
-  Img: /img/bruno.jpg
-  Smallimg: /img/small-bruno.png
-  Link: 'http://bruno.adele.im'
-  Follow: https://twitter.com/jesuislibre
-
 menu:
   main:
     - name: "Home"
@@ -63,12 +53,25 @@ menu:
       URL: "http://bruno.adele.im"
 
 params:
+  subtitle: "Une famille complètement 633<"
+  logo: "img/bruno-avatar-127.jpg"
+  favicon: "img/favicon.ico"
+  commit: "https://github.com/badele/blog.jesuislibre.org/tree/"
+  rss: true
+
   UseChroma: true
   shortdateformat: "2 Jan"
   dateformat: "2 Jan 2006"
 
-  site:
-    sitedescription: "Une famille complètement 633<"
+  comments: true
+  staticman:
+    api: https://api.staticman.net/v2/entry/badele/comments/master/comments
+    pulls: https://github.com/badele/comments/pulls
+    redirect: /staticman-posted-comment.html
+    recaptcha:
+      sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
+      secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+
 
   jsl:
     piwik_id: 4
@@ -110,3 +113,26 @@ params:
     - Alt: "Github"
       URL: "https://github.com/badele"
       Img: "/button/badge_github.png"
+
+Author:
+  Name: "Bruno Adelé"
+  Website: http://bruno.adele.im
+  Email: bruno@adele.im
+  Twitter: "jesuislibre"
+  Facebook: "bruno.adele"
+  Googleplus: "100723270029692582967"
+  Github: "badele"
+  Linkedin": "brunoadele"
+  Stackoverflow: "users/2015612/bruno-adelé"
+  Youtube: "brunoadele"
+  Soundcloud: "bruno-adele"
+  Spotify: "2166cwmaoshdihdqzhlphsbcy"
+  Instagram: "badele34"
+  Paypal: "brunoadele"
+  Bio: "Passionné d'informatique depuis + de 25 ans, Devops dans une start up Montpelliéraine, utilise et contribue aux logiciels Open Source"
+  Job: "Devops & Geek"
+  Location: "Montpellier - France"
+  Img: /img/bruno.jpg
+  Smallimg: /img/small-bruno.png
+  Link: 'http://bruno.adele.im'
+  Follow: https://twitter.com/jesuislibre
