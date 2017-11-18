@@ -58,6 +58,7 @@ params:
   favicon: "img/favicon.ico"
   commit: "https://github.com/badele/blog.jesuislibre.org/tree/"
   rss: true
+  rsslimit: 10
 
   UseChroma: true
   shortdateformat: "2 Jan"
@@ -71,47 +72,9 @@ params:
       sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
       secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
 
-
   jsl:
     piwik_id: 4
     piwik_server: "analytics.jesuislibre.org"
-
-  buttons:
-    - Alt: "Family site"
-      URL: "adele.im"
-      Img: "/button/badge_aim.png"
-
-    - Alt: "Feed RSS"
-      URL: "http://feeds.feedburner.com/FamilleDeGeek"
-      Img: "/button/badge_rss.png"
-
-    - Alt: "Twitter"
-      URL: "http://twitter.com/jesuislibre.org"
-      Img: "/button/badge_twitter.png"
-
-    - Alt: "Google +"
-      URL: "https://plus.google.com/100723270029692582967"
-      Img: "/button/badge_google+.png"
-
-    - Alt: "Blog"
-      URL: "ahttp://blog.jesuislibre.org"
-      Img: "/button/badge_blog.png"
-
-    - Alt: "Facebook"
-      URL: "http://www.facebook.com/bruno.adele"
-      Img: "/button/badge_facebook.png"
-
-    - Alt: "Flickr"
-      URL: "http://www.flickr.com/photos/b_adele"
-      Img: "/button/badge_flickr.png"
-
-    - Alt: "Linkedin"
-      URL: "http://fr.linkedin.com/in/brunoadele"
-      Img: "/button/badge_linkedin.png"
-
-    - Alt: "Github"
-      URL: "https://github.com/badele"
-      Img: "/button/badge_github.png"
 
 Author:
   Name: "Bruno Adelé"
