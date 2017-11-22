@@ -20,8 +20,6 @@ git remote add fork git@github.com:halogenica/beautifulhugo.git
 cd blog_destination/themes
 git checkout master
 git rebase fork/master
-git checkout -b used_by_my_blog 7cdd0e0b3d986af12079c0f37d069fbe2713ab16
-git rebase staticman
-git rebase post-info
+git checkout -b used_by_my_blog ebfb6b87803f906382775ba90efdd9e1ebf31280
 git rebase piwik
 ```
