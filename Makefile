@@ -3,7 +3,8 @@ all: build
 hugoinstall:
 	cd /tmp/ && curl -LO https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz
 	cd /tmp/ && tar -xvzf /tmp/hugo_* hugo
-	cp /tmp/hugo ~/local/bin/
+	mkdir -p ~/.bin
+	cp /tmp/hugo ~/.bin
 
 build:
 	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --cleanDestinationDir
@@ -15,5 +16,8 @@ serve:
 serve-debug:
 	hugo serve -v --buildDrafts --renderToDisk
 
+publishtest: build
+	git diff --quiet --exit-code && rsync -avrn --delete public/ w4a153382@ssh.web4all.fr:/datas/vol3/w4a153382/var/www/blog.jesuislibre.org/htdocs/
+
 publish: build
-	rsync -avr --delete public/ w4a153382@ssh.web4all.fr:/datas/vol3/w4a153382/var/www/blog.jesuislibre.org/htdocs/
+	git diff --quiet --exit-code && rsync -avr --delete public/ w4a153382@ssh.web4all.fr:/datas/vol3/w4a153382/var/www/blog.jesuislibre.org/htdocs/
