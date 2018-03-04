@@ -1,5 +1,5 @@
 _id: 2586c240-1fcf-11e8-8e5c-bbd9119aac8b
-comment: "Salut @Yax, effectivement c'est tellement simple de valider une PR github (commentaire). Voici le workflow\r\n\r\n**Accepter la PR sur github** puis exécuter les commandes suivantes à la main (En attendent d'automatiser via [Travis](https://travis-ci.org)\r\n\r\n```\r\ngit pull origin master\r\nmake publish\r\n```"
+comment: "Salut @Yax, effectivement c'est tellement simple de valider une PR github (commentaire). Voici le workflow\r\n\r\n**Accepter la PR sur github** puis exécuter les commandes suivantes à la main (En attendent d'automatiser via [Travis](https://travis-ci.org)\r\n\r\n```\r\ngit pull origin master\r\nmake publish\r\n```\r\n\r\n Il est même possible de faire de la validation colaborative (via github) :)"
 name: Bruno Adelé
 email: 6d0c03acc6a383d478849a5a19368837
 website: 'http://bruno.adele.im'
