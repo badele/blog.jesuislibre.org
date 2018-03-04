@@ -11,15 +11,19 @@ cp /tmp/hugo ~/local/bin/
 
 ## Theme installation
 ```bash
-cd blog_destination/themes
+git clone https://github.com/badele/blog.jesuislibre.org.git
+cd blog.jesuislibre.org
+mkdir themes
+cd themes
 git clone git@github.com:badele/beautifulhugo.git
+cd beautifulhugo
 git remote add fork git@github.com:halogenica/beautifulhugo.git
+git fetch fork
 ```
 
 ```bash
-cd blog_destination/themes
+cd blog.jesuislibre.org/themes
 git checkout master
 git rebase fork/master
-git checkout -b used_by_my_blog ebfb6b87803f906382775ba90efdd9e1ebf31280
-git rebase piwik
+git checkout -b used_by_my_blog 2d5a6fb059247405ffa5bbb812a787aecdd329b9
 ```
