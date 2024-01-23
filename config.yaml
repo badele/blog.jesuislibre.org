@@ -1,7 +1,7 @@
 LanguageCode: "fr-FR"
 DefaultContentLanguage: "fr"
 Title: "Famille de geeks"
-BaseURL: "http://blog.jesuislibre.org/"
+BaseURL: "https://blog.jesuislibre.org/"
 Theme: "beautifulhugo"
 MetaDataFormat: "yaml"
 ignoreErrors: ["error-output-taxonomy"]
