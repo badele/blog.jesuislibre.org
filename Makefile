@@ -6,6 +6,9 @@ hugoinstall:
 	mkdir -p ~/.bin
 	cp /tmp/hugo ~/.bin
 
+build-draft:
+	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --buildDrafts --cleanDestinationDir
+
 build:
 	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --cleanDestinationDir
 
