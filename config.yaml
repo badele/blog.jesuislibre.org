@@ -55,7 +55,7 @@ menu:
 
 params:
   subtitle: "Une famille complètement 633<"
-  logo: "img/bruno-avatar-127.jpg"
+  logo: "img/bruno-avatar-256.jpg"
   favicon: "img/favicon.ico"
   commit: "https://github.com/badele/blog.jesuislibre.org/tree/"
   rss: true
