@@ -1,0 +1,14 @@
+{{- $lines := split .Inner "\n" -}}
+<pre class="asciitable lcyan">
+{{- range $index, $line := $lines -}}
+    {{- if eq $index 2 -}}
+{{ $line := replaceRE `\|([^|]+)` `|<span class="lyellow">${1}</span>` $line }}
+{{- $line | safeHTML -}}
+    {{ else if eq $index 3 }}
+<span class="lcyan">{{- $line -}}</span>
+    {{- else -}}
+{{ $line := replaceRE `\|([^|]+)` `|<span class="lgray">${1}</span>` $line }}
+{{ $line | safeHTML }}
+    {{- end -}}
+{{- end -}}
+</pre>

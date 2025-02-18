@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<header>
+{{ with $.Site.Params.theme_config.logo }}
+<pre>
+{{- . | safeHTML -}}
+</pre>
+{{- end -}}
+{{ with $.Site.Params.theme_config.subtitle }}
+<p>{{ . }}</p>
+{{- end -}}
+{{ with .Params.Image }}
+<img src="{{ .src | absURL }}" alt="{{ .desc }}"></img>
+{{ end }}
+{{- if $.Site.Params.theme_config.show_description -}}
+        <p>{{ $.Site.Params.description }}</p>
+    {{- end -}}
+</header>
+
+<article>
+    <p class="post-meta">
+        <time datetime="{{ .Date }}">
+            <span class="dmagenta">::</span> {{ .Date | time.Format site.Params.theme_config.date_format }} <span class="dmagenta">::</span>
+        </time>
+        <author>
+        {{ range .Params.author }}
+          &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;{{ . | safeHTML }}
+	      {{ end }}
+        </author>
+    </p>
+
+    <pre class="hr"><b><span class="lyellow">————<span><span class="lgreen">—<span><span class="lyellow">———<span><span class="lgreen">—<span><span class="lyellow">—<span><span  class="lgreen">————<span><span class="dgreen">—<span><span  class="lgreen">———<span><span class="dgreen">—<span><span  class="lgreen">—<span><span  class="dgreen">————<span><span  class="lgray">—<span><span  class="dgreen">———<span><span  class="lgray">—<span><span  class="dgreen">—<span><span class="lgray">————————————————————————————————————————</span><span  class="dgreen">—<span><span  class="lgray">—<span><span  class="dgreen">———<span><span  class="lgray">—<span><span  class="dgreen">————<span><span  class="lgreen">—<span><span class="dgreen">—<span><span  class="lgreen">———<span><span class="dgreen">—<span><span  class="lgreen">————<span><span class="lyellow">—<span><span class="lgreen">—<span><span class="lyellow">———<span><span class="lgreen">—<span><span class="lyellow">————<span></b></pre>
+    <h1>{{ .Title }}</h1>
+    <pre class="hr"><b><span class="lyellow">————<span><span class="lgreen">—<span><span class="lyellow">———<span><span class="lgreen">—<span><span class="lyellow">—<span><span  class="lgreen">————<span><span class="dgreen">—<span><span  class="lgreen">———<span><span class="dgreen">—<span><span  class="lgreen">—<span><span  class="dgreen">————<span><span  class="lgray">—<span><span  class="dgreen">———<span><span  class="lgray">—<span><span  class="dgreen">—<span><span class="lgray">————————————————————————————————————————</span><span  class="dgreen">—<span><span  class="lgray">—<span><span  class="dgreen">———<span><span  class="lgray">—<span><span  class="dgreen">————<span><span  class="lgreen">—<span><span class="dgreen">—<span><span  class="lgreen">———<span><span class="dgreen">—<span><span  class="lgreen">————<span><span class="lyellow">—<span><span class="lgreen">—<span><span class="lyellow">———<span><span class="lgreen">—<span><span class="lyellow">————<span></b></pre>
+
+    {{ if .Params.toc }}
+        <aside {{ if .Params.tocBorder }} class="toc" {{ end }}>
+            {{ .TableOfContents }}
+        </aside>
+    {{ end }}
+
+    {{ .Content }}
+
+    <h2>Metadatas</h2>
+
+<ul>
+    {{ with .Params.Tags }}
+    <li>Tags:</li>
+      <ul>
+      <li>
+{{ delimit (slice) " | " | safeHTML }}
+{{ range $index, $tag := . }}
+   {{ if  not (eq $index 0) }} | {{ end }}
+   <a href="{{"tags" | absLangURL}}/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+{{ end }}
+
+
+{{ range . }}
+        {{ end }}
+
+      </li>
+      </ul>
+    {{ end }}
+    
+    {{ with .Params.Sources }}
+    <li>Sources:</li>
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .link }}" target="_blank">{{ .sitename }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ if .Params.IA }}
+      <li>IA:</li>
+      <ul>
+        {{ range .Params.IA }}
+          <li>{{ .name }}</li>
+          <ul>
+            {{ range .items }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <li>IA: Aucune IA utilisée pour ce billet.</li>
+    {{ end }}
+
+</ul>
+</article>
+{{ end }}

@@ -11,39 +11,45 @@ Tags:
 - Terminal
 - Tutoriel
 - XML
+Sources:
+  - sitename: fr.wikipedia.org
+    link: https://fr.wikipedia.org/wiki/XML_Schema
+  - sitename: archlinux.fr
+    link: https://archlinux.fr/yaourt
+  - sitename: www.allhtml.com
+    link: https://www.allhtml.com
+  - sitename: www.w3.org
+    link: https://www.w3.org/2001/XMLSchema
 ---
 
-
 Pour cela nous allons utiliser l’outil
-[trang](Générer%20un%20schéma%20xsd%20depuis%20un%20fichier%20xml),
-outil développé en Java, qui est donc multi-plateforme
+[trang](Générer%20un%20schéma%20xsd%20depuis%20un%20fichier%20xml), outil
+développé en Java, qui est donc multi-plateforme
 
-A propos
---------
+## A propos
 
--   [XML](XSD%20(Schema%20XML)%20Définit%20la%20structure%20d’un%20fichier%20XML)
-    (Extensible Markup Language) Format de fichier permettant d’échanger
-    des informations entre divers logiciels
--   [XSD](http://fr.wikipedia.org/wiki/XML_Schema) (Schema XML) Définit
-    la structure d’un fichier XML
+- [XML](XSD%20(Schema%20XML)%20Définit%20la%20structure%20d’un%20fichier%20XML)
+  (Extensible Markup Language) Format de fichier permettant d’échanger des
+  informations entre divers logiciels
+- [XSD](http://fr.wikipedia.org/wiki/XML_Schema) (Schema XML) Définit la
+  structure d’un fichier XML
 
-Installation et utilisation de trang
-------------------------------------
+## Installation et utilisation de trang
 
-Je vais expliquer ici son utilisation et l’installation sur la
-distribution Archlinux. Nous installons trang avec l’outil
+Je vais expliquer ici son utilisation et l’installation sur la distribution
+Archlinux. Nous installons trang avec l’outil
 [Yaourt](http://archlinux.fr/yaourt)
 
-{{< highlight bash>}}
+```bash
 yaourt -S trang
-{{< /highlight>}}
+```
 
-Pour le fichier d’exemple, j’ai utilisé le fichier XML fourni dans le
-tutoriel suivant <http://www.allhtml.com/articles/detail/354>
+Pour le fichier d’exemple, j’ai utilisé le fichier XML fourni dans le tutoriel
+suivant <http://www.allhtml.com/articles/detail/354>
 
 Copiez le fichier de l’ exemple suivant dans le fichier xml.xml
 
-{{< highlight xml>}}
+```xml
 <?xml version="1.0"?>
 <!-- Exemple issu du site  http://www.allhtml.com/articles/detail/354 -->
 <traducteur>
@@ -63,17 +69,17 @@ Copiez le fichier de l’ exemple suivant dans le fichier xml.xml
     <italiano>Verde</italiano>
   </mot>
 </traducteur>
-{{< /highlight>}}
+```
 
 Ensuite lancez la commande suivante:
 
-{{< highlight bash>}}
+```bash
 trang xml.xml xml.xsd
-{{< /highlight>}}
+```
 
 Et voici le résultat
 
-{{< highlight xml>}}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
   <xs:element name="traducteur">
@@ -96,4 +102,4 @@ Et voici le résultat
   <xs:element name="english" type="xs:NCName"/>
   <xs:element name="italiano" type="xs:NCName"/>
 </xs:schema>
-{{< /highlight>}}
+```

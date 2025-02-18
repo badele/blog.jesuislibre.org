@@ -9,9 +9,28 @@ Tags:
 - Homelab
 - Opensource
 - planet-libre
-Image: "/img/2024/homelab_retro.png"
-BigImg:
-- {src: "/img/2024/homelab_retro.png", desc: "homelab retro"}
+Image:
+  src: /img/2024/homelab_retro_cga_palette_crt_effects.png
+  desc: homelab retro
+Sources:
+  - sitename: blog.jesuislibre.org
+    link: https://blog.jesuislibre.org
+  - sitename: fr.wikipedia.org
+    link: https://fr.wikipedia.org
+  - sitename: nixos.org
+    link: https://nixos.org/
+  - sitename: linuxcontainers.org
+    link: https://linuxcontainers.org/incus/
+  - sitename: mikrotik.com
+    link: https://mikrotik.com/
+  - sitename: devops.jesuislibre.org
+    link: https://devops.jesuislibre.org/networking/mikrotik/
+IA:
+  - name: openai
+    items:
+    - Reformulation des phrases
+    - Correction des fautes d'orthographes
+    - Genération de l'image de garde (Dall-E)
 ---
 
 **Les épisodes :**
@@ -67,6 +86,8 @@ l'hyperviseur [Incus](https://linuxcontainers.org/incus/)
 
 Le materiel utilisé pour la conception de ce homelab
 
+{{< table-to-ascii >}}
+
 |  device  |                           model                            |                               description                                |
 | :------: | :--------------------------------------------------------: | :----------------------------------------------------------------------: |
 | routeur  |                    RB4011iGS+5HacQ2HnD                     |                               Routeur Wifi                               |
@@ -75,6 +96,8 @@ Le materiel utilisé pour la conception de ce homelab
 | computer | NiPoGi AMD 64 bits Ryzen 73750H / 16Go RAM / 512 Go disque |        NiPoGi AMD 64 bits Ryzen 73750H / 16Go RAM / 512 Go disque        |
 | computer |                    HP Microserver N40L                     | AMD 64 bits Dual Core 1.5 Ghz Turion II Neo N40L / 8Go RAM / 4 To disque |
 | computer |                       Raspberry Pi 4                       |     ARM 64 bits Quad core 600Mhz cortex-a72 / 8Go RAM / 500Go disque     |
+
+{{</ table-to-ascii >}}
 
 ## Réseau
 
@@ -98,6 +121,8 @@ sous-réseaux avec un masque de **`/20`**. Cela permet de diviser mon réseau en
 
 ### Zones VLAN
 
+{{< table-to-ascii >}}
+
 | Zone VLAN                      | Réseau           |
 | ------------------------------ | ---------------- |
 | Privé (LAN, ADM)               | 192.168.240.0/20 |
@@ -117,7 +142,11 @@ sous-réseaux avec un masque de **`/20`**. Cela permet de diviser mon réseau en
 |                                | 192.168.16.0/20  |
 | Zone de guerre (WAR)           | 192.168.0.0/20   |
 
+{{</ table-to-ascii >}}
+
 ### Allocation VLAN
+
+{{< table-to-ascii >}}
 
 |     Zone VLAN      | VLAN ID | Réseau VLAN  |     Adresse      |   Description    |
 | :----------------: | :-----: | :----------: | :--------------: | :--------------: |
@@ -126,13 +155,19 @@ sous-réseaux avec un masque de **`/20`**. Cela permet de diviser mon réseau en
 | Zone démilitarisée |   32    |     DMZ      | 192.168.32.0/24  |                  |
 |   Zone de guerre   |    0    | Internet Box |  192.168.0.0/24  |                  |
 
+{{</ table-to-ascii >}}
+
 ### Exemple de catégorisation des équipements
+
+{{< table-to-ascii >}}
 
 | Préfixe de périphérique | Description       | Réseau de périphérique | Utilisé dans le VLAN | Appareils                             |
 | ----------------------- | ----------------- | ---------------------- | -------------------- | ------------------------------------- |
 | mikrotik                | Routeur           | 192.168.x.240/28       | ADM, LAN, DMZ, WAR   | mikrotik254, mikrotik253, mikrotik252 |
 | hype                    | Hyperviseur Incus | 192.168.x.16/28        | ADM, LAN, DMZ        | hype16, hype17, hype18                |
 | store                   | storage servers   | 192.168.x.32/28        | ADM, LAN, DMZ        | store32, store33                      |
+
+{{</ table-to-ascii >}}
 
 Dans chaque sous-réseau, je vais, autant que possible, catégoriser par type de
 périphérique en utilisant un masque de **`/28`**, offrant une capacité de 16
@@ -156,7 +191,7 @@ Avant d’exécuter les commandes suivantes, je m'assure d'avoir activé le **mo
 sécurisé** (**safe mode**) du routeur. Le **safe mode** me protègera d'une
 erreur de configuration du routeur, comme une mauvaise configuration du firewall
 ou le **vlan filtering** du bridge par exemple. Pour activer le **safe mode**,
-je presse les touches **CTRL-x** dans le terminal.
+je presse les touches `CTRL-x` dans le terminal.
 
 **Comment fonctionne le safe mode ?**
 
@@ -229,7 +264,7 @@ add interface=ether1 list=WAN
 ##### Application de la configuration
 
 Pour préserver l’ensemble de la configuration précédente (étant toujours en mode
-`<SAFE>`), je ressort du safe mode en pressant les touches **CTRL-x**.
+`<SAFE>`), je ressort du safe mode en pressant les touches `CTRL-x`.
 
 Je peux dorénavant passer à l'activation du **VLAN filtering**, en exécutant les
 commandes suivantes (en n'oubliant pas d'activer le safe mode):
@@ -248,17 +283,3 @@ Si vous souhaitez en savoir plus sur les commandes MikroTik, j'ai créé une
 [page dédiée](https://devops.jesuislibre.org/networking/mikrotik/).
 
 La suite au prochain épisode ...
-
-## Sources
-
-- Site webs
-  - [fr.wikipedia.org](https://fr.wikipedia.org)
-  - [help.mikrotik.com](https://help.mikrotik.com)
-  - [mikrotik.com](https://mikrotik.com)
-  - [linuxcontainers.org](https://linuxcontainer.org)
-  - [nixos.org](https://nixos.org)
-- IA
-  - openai
-    - Reformulation des phrases
-    - Correction des fautes d'orthographe
-    - Genération de l'image de garde (Dall-E)

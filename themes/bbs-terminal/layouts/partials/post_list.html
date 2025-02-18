@@ -1,0 +1,16 @@
+{{- $posts := "" -}}
+
+{{- $posts = site.RegularPages }}
+{{- if (gt (len $posts) 0) }}
+    {{- if .limit }}
+        {{ $posts = (first .limit $posts ) }}
+    {{ end }}
+    <ul>
+        {{- range $post := $posts -}}
+        <li>
+            <span class="lgray">{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+            <a href="{{ $post.Permalink | relURL }}">{{ $post.Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+{{ end }}

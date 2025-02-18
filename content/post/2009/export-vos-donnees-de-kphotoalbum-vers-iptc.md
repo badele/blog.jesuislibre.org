@@ -9,67 +9,71 @@ Tags:
 - planet-libre
 - Photo
 - Script
+Sources:
+  - sitename: www.flickr.com
+    link: https://www.flickr.com/photos/b_adele/
+  - sitename: linuxfr.org
+    link: https://linuxfr.org/~doucetp/20428.html
+  - sitename: kphotoalbum.org
+    link: https://kphotoalbum.org
+  - sitename: fr.wikipedia.org
+    link: https://fr.wikipedia.org/wiki/International_Press_Telecommunications_Council
 ---
 
-Depuis environ 5 ans j’utilise KPhotoAlbum. Afin d’éviter de devoir
-retagger mes photos pour les partager sur mon [compte
-flickr](http://www.flickr.com/photos/b_adele/), j’ai modifié un script
-de Pierre Doucet trouvé sur [le site
-linuxfr](http://linuxfr.org/~doucetp/20428.html)
+Depuis environ 5 ans j’utilise KPhotoAlbum. Afin d’éviter de devoir retagger mes
+photos pour les partager sur mon
+[compte flickr](http://www.flickr.com/photos/b_adele/), j’ai modifié un script
+de Pierre Doucet trouvé sur
+[le site linuxfr](http://linuxfr.org/~doucetp/20428.html)
 
-A propos
---------
+## A propos
 
--   [KPhotoAlbum](http://kphotoalbum.org/) (se nommait auparavant
-    kimdaba), ce logiciel fonctionne sous KDE et permet d’associer pour
-    chaque photo des mots clefs comme par exemple (Lieu, Personne,
-    Evènement). Vous pouvez ensuite retrouver très rapidement des photos
-    en fonction des mots clefs désirés. Ce logiciel me permet de
-    retrouver en moins de 5 secondes des photos sur une base de + de
-    20.000 photos.
--   [IPTC](http://fr.wikipedia.org/wiki/International_Press_Telecommunications_Council)
-    Standard permettant de véhiculer des informations directement dans
-    la photo. Ceci permet donc visualiser les informations depuis un
-    logiciel compatible IPTC.
+- [KPhotoAlbum](http://kphotoalbum.org/) (se nommait auparavant kimdaba), ce
+  logiciel fonctionne sous KDE et permet d’associer pour chaque photo des mots
+  clefs comme par exemple (Lieu, Personne, Evènement). Vous pouvez ensuite
+  retrouver très rapidement des photos en fonction des mots clefs désirés. Ce
+  logiciel me permet de retrouver en moins de 5 secondes des photos sur une base
+  de + de 20.000 photos.
+- [IPTC](http://fr.wikipedia.org/wiki/International_Press_Telecommunications_Council)
+  Standard permettant de véhiculer des informations directement dans la photo.
+  Ceci permet donc visualiser les informations depuis un logiciel compatible
+  IPTC.
 
-Installation
-------------
+## Installation
 
-Avant d’utiliser le script il faut avant tout installer les librairies
-perl.
+Avant d’utiliser le script il faut avant tout installer les librairies perl.
 
-{{< highlight bash>}}
+```bash
 mkdir -p ~/local/bin
 perl -MCPAN -e shell
-{{< /highlight>}}
+```
 
 Répondre oui à la question posée, ensuite exécuter les lignes suivantes
 
-{{< highlight plaintext>}}
+```plaintext
 cpan>
 o conf makepl_arg PREFIX=~/local
 o conf commit
 install Image::Kimdaba
 install Image::IPTCInfo
-{{< /highlight>}}
+```
 
-Le script
----------
+## Le script
 
 Copier le script ci dessous vers le fichier kphotoalbum2iptc.pl
 
-Par soucis de sécurité le script s’exécute en mode simulation, pour
-l’activer, modifier la variable onlyparse à 0
+Par soucis de sécurité le script s’exécute en mode simulation, pour l’activer,
+modifier la variable onlyparse à 0
 
 **Exemple d’utilisation**
 
-{{< highlight bash>}}
+```bash
 ./kphotoalbum2iptc.pl /path/album "^sous repertoire.*.jpg|.jpeg"
-{{< /highlight>}}
+```
 
 Fichier **kphotoalbum2iptc.pl**
 
-{{< highlight perl>}}
+```perl
 #!/usr/bin/perl -w
 # kphotoalbum2iptc.pl
 
@@ -124,4 +128,4 @@ foreach $kphoto (keys(%imageoptions))
 }
 
 print "$count photos traitées";
-{{< /highlight>}}
+```

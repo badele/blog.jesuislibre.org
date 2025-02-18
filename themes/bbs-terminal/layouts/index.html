@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<header>
+{{ with $.Site.Params.theme_config.logo }}
+<pre>
+{{- . | safeHTML -}}
+</pre>
+{{- end -}}
+{{ with $.Site.Params.theme_config.subtitle }}
+<p>{{ . }}</p>
+{{- end -}}
+{{- if $.Site.Params.theme_config.show_description -}}
+        <p>{{ $.Site.Params.description }}</p>
+    {{- end -}}
+</header>
+<span class="title bblack"><span class="black bred">articles</span></span>
+
+{{ partial "post_list.html" (dict "context" . "limit" 1000 "show_more" true "show_more_text" "[ voir autres billets ]" "show_more_url" "posts") -}}
+
+{{ end }}
