@@ -1,12 +1,17 @@
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
 LanguageCode: "fr-FR"
 DefaultContentLanguage: "fr"
 Title: "Famille de geeks"
 BaseURL: "https://blog.jesuislibre.org/"
-Theme: "beautifulhugo"
+Theme: "bbs-terminal"
 MetaDataFormat: "yaml"
 ignoreErrors: ["error-output-taxonomy"]
 
-pygmentsUseClasses: true
 pygmentsUseClasses: true
 pygmentCodeFences: true
 
@@ -54,7 +59,7 @@ menu:
       URL: "http://bruno.adele.im"
 
 params:
-  subtitle: "Une famille complètement 633<"
+  subtitle: "Fait par un geek pour les geeks"
   logo: "img/bruno-avatar-256.jpg"
   favicon: "img/favicon.ico"
   commit: "https://github.com/badele/blog.jesuislibre.org/tree/"

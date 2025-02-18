@@ -1,0 +1,389 @@
+$fgcolors: (
+  "black": #000000,
+  "dblue": #0000AA,
+  "dgreen": #00AA00,
+  "dcyan": #00AAAA,
+  "dred": #AA0000,
+  "dmagenta": #AA00AA,
+  "dyellow": #AA5500,
+  "lgray": #AAAAAA,
+  "dgray": #555555,
+  "lblue": #5555FF,
+  "lgreen": #55FF55,
+  "lcyan": #55FFFF,
+  "lred": #FF5555,
+  "lmagenta": #FF55FF,
+  "lyellow": #FFFF55,
+  "white": #FFFFFF
+);
+
+$bgcolors: (
+  "black": #000000,
+  "blue": #0000AA,
+  "green": #00AA00,
+  "cyan": #00AAAA,
+  "red": #AA0000,
+  "magenta": #AA00AA,
+  "yellow": #AA5500,
+  "gray": #AAAAAA
+);
+
+
+@font-face {
+  font-family: 'Web IBM VGA 8x16';
+  src: url('/fonts/ibm_vga8.eot');
+  src: url('/fonts/ibm_vga8-iefix.eot') format('embedded-opentype'),
+    url('/fonts/ibm_vga8.woff2') format('woff2'),
+    url('/fonts/ibm_vga8.woff') format('woff'),
+    url('/fonts/ibm_vga8.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+// Foreground colors
+@each $name, $color in $fgcolors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
+// background colors
+@each $name, $color in $bgcolors {
+  .b#{$name} {
+    background-color: $color;
+  }
+}
+
+
+html {
+  background-color: map-get($bgcolors, "black");
+  color: map-get($fgcolors, "lgray");
+
+  height: 100%;
+}
+
+body {
+
+  font-family: 'Web IBM VGA 8x16', monospace;
+  font-size: 1.3em;
+  line-height: 1.3em;
+
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  background-color: map-get($bgcolors, "black");
+}
+
+h1 {
+  margin: 4px;
+
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  color: map-get($fgcolors, "dcyan");
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 4rem;
+  text-align: center;
+  color: map-get($fgcolors, "dcyan");
+
+  &:before {
+    content: "--===####  ";
+    font-weight: bold;
+    color: map-get($fgcolors, "dgray");
+  }
+
+  &:after {
+    content: " ####===--";
+    font-weight: bold;
+    color: map-get($fgcolors, "dgray");
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
+
+p.footer {
+  text-align: center;
+}
+
+li {
+  margin: 0.4rem 0;
+  list-style-type: square;
+}
+
+a {
+  color: map-get($fgcolors, "dcyan");
+  text-decoration: none;
+
+  &:visited {
+    color: map-get($fgcolors, "dcyan");
+    ;
+  }
+
+  &:hover {
+    background-color: map-get($bgcolors, "blue");
+    text-decoration: none;
+  }
+}
+
+
+
+details {
+  border: thin solid map-get($fgcolors, "white");
+}
+
+details summary {
+  color: map-get($fgcolors, "white");
+}
+
+details[open] summary {
+  border-bottom: 1px solid map-get($fgcolors, "white");
+}
+
+strong {
+  color: map-get($fgcolors, "white");
+}
+
+.codeblock {
+  display: block;
+  margin: 2em 1em;
+  padding: 1em;
+  overflow-x: auto;
+  /* Fix pre content overflowing parent without scroll bar */
+  background-color: map-get($bgcolors, "gray");
+  color: map-get($fgcolors, "white");
+  font-family: monospace;
+  line-height: 1 !important;
+}
+
+pre.chroma {
+  margin: 2em 1em;
+  padding: 1em;
+  overflow-x: auto;
+  /* Fix pre content overflowing parent without scroll bar */
+
+  background-color: map-get($fgcolors, "dblue");
+  color: map-get($fgcolors, "lyellow");
+
+  /* font-family: monospace; */
+  line-height: 1 !important;
+
+  border: 8px double map-get($fgcolors, "lgray");
+  box-shadow: 16px 16px map-get($fgcolors, "dgray");
+}
+
+code:not(pre > code) {
+  background-color: map-get($fgcolors, "dblue");
+  color: map-get($fgcolors, "lyellow");
+
+  border: 1px solid map-get($fgcolors, "lgray");
+  box-shadow: 4px 4px map-get($fgcolors, "dgray");
+}
+
+header pre {
+  font-size: 1.5em;
+  line-height: 1em;
+
+  background-color: map-get($fgcolors, "black");
+  color: map-get($fgcolors, "white");
+
+  border: 0;
+  box-shadow: none;
+
+  display: block;
+  margin: 0 auto;
+  width: fit-content; // S'adapte au contenu
+}
+
+header p {
+  text-align: center;
+  color: map-get($fgcolors, "dgray");
+
+  margin-top: 0;
+}
+
+pre.asciitable {
+  color: map-get($fgcolors, "lcyan");
+  text-align: center;
+}
+
+pre.hr {
+  margin: 4px;
+  text-align: center;
+  ;
+}
+
+span.title {
+  margin: 8px auto;
+  padding: 8px 0;
+
+  /* background-color: map-get($fgcolors, "black"); */
+  /* background-color: map-get($fgcolors, "dred"); */
+
+  border: 0;
+  box-shadow: none;
+
+  display: block;
+
+  border-top: 12px solid map-get($fgcolors, "dgray");
+  border-bottom: 12px solid map-get($fgcolors, "dgray");
+}
+
+span.title span {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+
+
+  &:before {
+    display: inline-block;
+    content: " ░ ░ ░░║▌│  ";
+    font-weight: bold;
+
+    color: map-get($fgcolors, "lgray");
+  }
+
+  &:after {
+    display: inline-block;
+    content: "  ║▌│█║▌│ █║▌│█│║▌║░░ ░ ░";
+    font-weight: bold;
+
+    color: map-get($fgcolors, "lgray");
+  }
+}
+
+
+
+*:target {
+  background: map-get($bgcolors, "gray");
+  color: map-get($fgcolors, "white");
+}
+
+table thead tr th {
+  color: map-get($fgcolors, "lblue");
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  border: thin solid map-get($fgcolors, "dgray");
+  color: map-get($fgcolors, "lgray");
+}
+
+.toc {
+  border: thin solid map-get($fgcolors, "white");
+  padding: 1rem;
+}
+
+figcaption {
+  color: map-get($fgcolors, "lgray");
+}
+
+
+hr {
+  text-align: center;
+  border: 0;
+  margin: 2rem 0;
+
+  &:before {
+    content: '/////'
+  }
+
+  &:after {
+    content: attr(data-content) '/////'
+  }
+}
+
+
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+code:not(pre > code) {
+  padding: 0.1em 0.2em;
+  /* font-size: 90%; */
+}
+
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  /* font-size: 100%; */
+}
+
+blockquote {
+  border-left: 4px solid map-get($fgcolors, "dyellow");
+  /* background-color: map-get($fgcolors, "lgray"); */
+  color: map-get($fgcolors, "lgray");
+  padding: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  opacity: 0.5;
+}
+
+details {
+  padding: 1rem;
+}
+
+details summary {
+  text-decoration: none;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.post-meta {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+
+.toc {
+  padding: 1rem;
+}

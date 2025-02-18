@@ -8,23 +8,25 @@ Tags:
 - Github
 - Python
 - Git
+Sources:
+  - sitename: github.com
+    link: https://github.com/badele/gitcheck>
 ---
 
-Utilisation
------------
+## Utilisation
 
 **Commande**
 
 Pour l'utiliser, rien de plus simple
 
-{{< highlight bash>}}
+```bash
 cd /usr/local/bin
 wget https://raw.github.com/badele/gitcheck/master/gitcheck.py
 chmod 755 gitcheck.py
 gitcheck.py
 ou
 gitcheck.py -v
-{{< /highlight>}}
+```
 
 **Version simplifiée**
 
@@ -32,9 +34,9 @@ Exemple d'utilisation en version simple.
 
 ![gitcheck](/img/2013/gitcheck.png)
 
-Cette version affiche l'ensemble de vos dépôts git avec une mise en
-évidence de l'état du projet, en vert les dépôts git non modifiés, en
-rose les dépôts git modifiés.
+Cette version affiche l'ensemble de vos dépôts git avec une mise en évidence de
+l'état du projet, en vert les dépôts git non modifiés, en rose les dépôts git
+modifiés.
 
 **Version verbale**
 

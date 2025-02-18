@@ -13,8 +13,8 @@ build:
 	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo --cleanDestinationDir
 
 serve:
-	hugo gen chromastyles -v --style=monokai > themes/beautifulhugo/static/css/chroma_syntax.css
-	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve -v --buildDrafts
+	# hugo gen chromastyles -v --style=monokai > themes/beautifulhugo/static/css/chroma_syntax.css
+	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve --buildDrafts --disableFastRender
 
 serve-debug:
 	hugo serve -v --buildDrafts --renderToDisk

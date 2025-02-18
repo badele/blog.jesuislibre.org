@@ -8,9 +8,24 @@ Tags:
 - DevOps
 - Opensource
 - planet-libre
-Image: "/img/2024/gmail_analyzer.png"
-BigImg:
-- {src: "/img/2024/gmail_analyzer.png", desc: "gmail analyzer"}
+Image:
+ src: /img/2024/gmail_analyzer_ega_palette_crt_effects.png
+ desc: gmail analyzer
+Sources:
+  - sitename: isync.sourceforge.io
+    link: https://isync.sourceforge.io/mbsync.html
+  - sitename: github.com
+    link: https://github.com
+  - sitename: mail.google.com
+    link: https://mail.google.com/mail/u/0/#settings/fwdandpop
+  - sitename: myaccount.google.com
+    link: https://myaccount.google.com/apppassword
+  - sitename: www.passwordstore.org
+    link: https://www.passwordstore.org/
+IA:
+  - name: openai
+    items:
+     - Reformulation des phrases et correction des fautes d'orthographes
 ---
 
 ## Introduction
@@ -21,7 +36,8 @@ pourrai ni envoyer ni recevoir d’emails. Bien que GMail propose une interface
 efficace à bien des égards, il est quasiment impossible d’y gérer les emails par
 taille (comme identifier les plus volumineux).
 
-![gmail full](/img/2024/gmail_full.png) ![gmail 15go](/img/2024/gmail_15go.png)
+![gmail full](/img/2024/gmail_full_vga_palette_crt_effects.png)
+![gmail 15go](/img/2024/gmail_15go_vga_palette_crt_effects.png)
 
 Pour résoudre ce problème, j’ai décidé d’utiliser des outils en ligne de
 commande afin d’analyser et de gérer mes emails. Voici les outils utilisés :
@@ -200,7 +216,7 @@ grep "valentine.tanguy@fake.mail" sender_infos.txt | awk -F';' '{printf "%-20s;%
 Après nettoyage, j'ai récupéré 2 Go d'espace disque supplémentaire. Cela devrait
 me donner un peu de répit avant d'avoir à refaire un nouveau nettoyage.
 
-![gmail cleaned](/img/2024/gmail_cleaned.png)
+![gmail cleaned](/img/2024/gmail_cleaned_vga_palette_crt_effects.png)
 
 ## Conclusion
 
@@ -210,17 +226,3 @@ ou archiver les messages les plus volumineux de manière ciblée.
 
 Mes scripts sont disponibles sur
 [mon dépôt GitHub](https://github.com/badele/awesome-scripts/tree/main/maildir_email_size_analyzer).
-
-## Sources
-
-- Site webs
-  - [mail.google.com](https://mail.google.com)
-  - [myaccount.google.com](https://myaccount.google.com)
-  - [isync](https://isync.sourceforge.io/mbsync.html)
-  - [mblaze](https://github.com/leahneukirchen/mblaze)
-  - [termgraph](https://github.com/mkaz/termgraph)
-  - [www.passwordstore.org](https://www.passwordstore.org)
-  - [github.com/badele/awesome-scripts](github.com/badele/awesome-scripts)
-- IA
-  - openai
-    - Reformulation des phrases et correction des fautes d'orthographes

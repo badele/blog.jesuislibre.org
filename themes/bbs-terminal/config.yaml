@@ -1,0 +1,44 @@
+module:
+  hugoVersion:
+    extended: true
+    min: "0.41.0"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        # block: true
+        title: true
+
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ''
+    hl_inline: false
+    lineAnchors: ''
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: 'rrt'
+    tabWidth: 4
+
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: false
+
+params:
+  theme_config:
+    back_home_text: "<=="
+    date_format: "2006-01-02"
+    isListGroupByDate: false
+    subtitle: Par un geek, pour les geeks
+    logo: |
+      <span class="white">▄─▄  ▄─▄  ▄─▄─▄  ─▄─  ▄    ▄    ▄─▄       ──▄  ▄─▄       ▄─▄  ▄─▄  ▄─▄  ▄ ▄  ▄─▄</span>
+      <span class="lgray">█─   █─█  █ █ █   █   █    █    █─        █ █  █─        █─▄  █─   █─   █─▀  ▀─▄</span>
+      <span class="lcyan" >▀    ▀ ▀  ▀ ▀ ▀  ─▀─  ▀─▀  ▀─▀  ▀─▀       ──▀  ▀─▀       ▀─▀  ▀─▀  ▀─▀  ▀ ▀  ▀─▀</span>
