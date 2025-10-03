@@ -14,7 +14,7 @@ build:
 
 serve:
 	# hugo gen chromastyles -v --style=monokai > themes/beautifulhugo/static/css/chroma_syntax.css
-	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve --buildDrafts --disableFastRender
+	GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo serve --disableFastRender
 
 serve-debug:
 	hugo serve -v --buildDrafts --renderToDisk
